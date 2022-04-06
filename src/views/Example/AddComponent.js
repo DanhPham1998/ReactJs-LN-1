@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./Demo.scss";
 class AddComponent extends React.Component {
     state = {
         nameJob: "",
@@ -57,10 +57,13 @@ class AddComponent extends React.Component {
                         />
                     </div>
                     <div>
-                        <input
+                        <button
+                            className="btn-addJob"
                             type="submit"
                             onClick={(event) => this.handleClickOne(event)}
-                        />
+                        >
+                            Them
+                        </button>
                     </div>
                 </form>
             </>
